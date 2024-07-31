@@ -33,3 +33,9 @@ smtp-username = ""
 smtp-password = ""
 smtp-ssl = True
 
+;Debug 一般情况下无需开启
+[DEBUG]
+DEBUG = False
+DEV = False
+Connect-to-SW = False
+
