@@ -36,7 +36,7 @@ def config_handler():
     """
     config = configparser.ConfigParser()
     config.read('config.ini', encoding='utf-8')
-    device_id = '-'.join(str(uuid.uuid4()).upper() for _ in range(5))
+    device_id = '-'.join(str(uuid.uuid4()).upper() for _ in range(1))
     manuid = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(6))
     daoyu_key = config.get('Normal', 'DaoyuKey')
     show_username = config.get('Normal', 'ShowUsername')
